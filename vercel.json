@@ -1,10 +1,20 @@
 {
-    "version": 2,
-      { "src": "app.py", "use": "@vercel/python" }
-    ],
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/.*", "dest": "/app.py" }
-    ]
-  }
-  
+  "version": 2,
+  "functions": {
+    "api/search": {
+      "runtime": "python3.8",
+      "memory": 128
+    }
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    {
+      "src": "/api/(.*)",
+      "dest": "api/search"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
