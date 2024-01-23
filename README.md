@@ -1,6 +1,6 @@
+![RepoDr](https://reposweeper.com/assets/stethoscope.png)
 # RepoDr - Find Open Source Projects
 
-![RepoDr](https://reposweeper.com/assets/stethoscope.png)
 
 <p align="center">
   <a href="https://heroku.com/deploy?template=https://github.com/FFUV/AlphaRepoDr" target="_blank">
