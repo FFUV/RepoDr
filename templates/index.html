@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RepoDr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>RepoDr - Find Open Source Projects</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div class="search-container">
+            <label for="query" class="label">Project Type:</label>
+            <div class="input-group">
+                <input type="text" id="query" class="input" placeholder="Enter your query">
+                <button onclick="searchProjects()" class="button">Search</button>
+            </div>
+        </div>
+        <div class="filter-container">
+            <button onclick="applyFilters('most-popular')" class="filter-button">Most Popular</button>
+            <button onclick="applyFilters('least-popular')" class="filter-button">Least Popular</button>
+        </div>
+        <div id="projects" class="projects-container"></div>
+    </main>
+    
+    <script defer src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

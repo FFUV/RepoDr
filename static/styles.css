@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+}
+
+.label {
+    margin-right: 10px;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.input {
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    flex-grow: 1;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+}
+
+.filter-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #d0d3d4;
+}
+
+.filter-button.active {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.projects-container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
