@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://heroku.com/deploy?template=https://github.com/FFUV/AlphaRepoDr" target="_blank">
     <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
-      <a href="https://vercel.com/new/project?template=https://github.com/FFUV/AlphaRepoDr" target="_blank">
+      <a href="https://vercel.com/new/clone?utm_source=busiyi&utm_campaign=oss&repository-url=https://github.com/FFUV/AlphaRepoDr" target="_blank">
     <img src="https://vercel.com/button" alt="Deploy with Vercel">
   </a>
 </p>
